@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
 
+<!--    퍼미션을 설정도 하지만, 주로 이용하는 편이라서, 위치 관련 권한 요청-->
+<!--    위치 권한 요청을 아래에 2개를 세트로 구성했음. 이유는 체크성 오류가 발생해서-->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
